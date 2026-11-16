@@ -5,12 +5,12 @@ class ScrcpyHarmony < Formula
   sha256 "99f20073b20c3dc5e504bf413b85fdfea70633f771aa048ee8ba6255f0ddb60a"
   license "Apache-2.0"
 
+  depends_on arch: :arm64
   depends_on "ffmpeg"
   depends_on "libusb"
+  depends_on :macos
   depends_on "python@3.12"
   depends_on "sdl3"
-  depends_on arch: :arm64
-  depends_on :macos
 
   def install
     package = buildpath
