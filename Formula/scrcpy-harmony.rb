@@ -1,8 +1,8 @@
 class ScrcpyHarmony < Formula
   desc "Experimental HarmonyOS screen mirroring and control for rooted devices"
   homepage "https://github.com/YouChenJun/scrcpy-harmony"
-  url "https://github.com/YouChenJun/scrcpy-harmony/releases/download/v0.1.0/scrcpy-harmony-0.1.0-macos-arm64.tar.gz"
-  sha256 "99f20073b20c3dc5e504bf413b85fdfea70633f771aa048ee8ba6255f0ddb60a"
+  url "https://github.com/YouChenJun/scrcpy-harmony/releases/download/v0.1.1/scrcpy-harmony-0.1.1-macos-arm64.tar.gz"
+  sha256 "a231c9e1c579012d472ef8da11c2b973dc6d7063d939dbb016fb0d8c48cf6b06"
   license "Apache-2.0"
 
   depends_on arch: :arm64
