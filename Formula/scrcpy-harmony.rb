@@ -14,7 +14,7 @@ class ScrcpyHarmony < Formula
   depends_on "sdl3"
 
   def install
-    package = buildpath/"scrcpy-harmony"
+    package = buildpath
     libexec.install package/"scrcpy-harmony.py"
     libexec.install package/"scrcpy"
     libexec.install package/"scrcpy-harmony-server"
