@@ -1,8 +1,8 @@
 class ScrcpyHarmony < Formula
   desc "Experimental HarmonyOS screen mirroring and control for rooted devices"
   homepage "https://github.com/YouChenJun/scrcpy-harmony"
-  url "https://github.com/YouChenJun/scrcpy-harmony/releases/download/v0.1.1/scrcpy-harmony-0.1.1-macos-arm64.tar.gz"
-  sha256 "a231c9e1c579012d472ef8da11c2b973dc6d7063d939dbb016fb0d8c48cf6b06"
+  url "https://github.com/YouChenJun/scrcpy-harmony/releases/download/v0.2.0/scrcpy-harmony-0.2.0-macos-arm64.tar.gz"
+  sha256 "df628908de7234f87d11fbc5712023a0006a076d9d21f1090ec7928bb949362e"
   license "Apache-2.0"
 
   depends_on arch: :arm64
@@ -30,6 +30,8 @@ class ScrcpyHarmony < Formula
   end
 
   test do
-    assert_match "root", shell_output("#{bin}/scrcpy-harmony --help")
+    help = shell_output("#{bin}/scrcpy-harmony --help")
+    assert_match "root", help
+    assert_match "--include-system-overlays", help
   end
 end

@@ -19,3 +19,14 @@ user-specific device profiles.
 ```sh
 scrcpy-harmony --backend=root --no-audio -w
 ```
+
+To include notification panels, the control center, and other system overlays:
+
+```sh
+scrcpy-harmony --include-system-overlays --no-audio -w
+```
+
+This option requires the root backend and primary display. It disables the default
+system-window privacy masking, so notifications, verification codes, chat previews,
+and input method content may appear in the mirror and recordings. It is off by
+default.

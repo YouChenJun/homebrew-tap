@@ -17,6 +17,14 @@ brew install scrcpy-harmony
 scrcpy-harmony --no-audio -w
 ```
 
+如果需要在投屏中显示下拉通知栏、控制中心等系统面板：
+
+```sh
+scrcpy-harmony --include-system-overlays --no-audio -w
+```
+
+该选项仅支持 root 后端和主屏幕，会关闭系统窗口的默认隐私遮罩。通知内容、验证码、聊天预览和输入法内容都可能出现在投屏及录像中。默认不启用。
+
 ## 环境要求
 
 - macOS，Apple Silicon（arm64）
